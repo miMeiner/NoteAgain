@@ -1,23 +1,20 @@
-import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
-import { getAuth } from "firebase/auth";
-import {
-  FB_API_KEY,
-  FB_AUTH_DOMAIN,
-  FB_PROJECT_ID,
-  FB_STORAGE_BUCKET,
-  FB_MESSAGING_SENDER_ID,
-  FB_APP_ID,
-} from "@env";
+import { initializeApp } from 'firebase/app';
+import { getAuth } from 'firebase/auth';
+import { getFirestore } from 'firebase/firestore';
 
 // Initialize Firebase
-export const firebaseConfig = {
-  apiKey: FB_API_KEY,
-  authDomain: FB_AUTH_DOMAIN,
-  projectId: FB_PROJECT_ID,
-  storageBucket: FB_STORAGE_BUCKET,
-  messagingSenderId: FB_MESSAGING_SENDER_ID,
-  appId: FB_APP_ID,
+const firebaseConfig = {
+  apiKey: 'AIzaSyB0vi3VHoUqfVd0b1Snwhrt0PA0htcCRoM',
+
+  authDomain: 'noteagain-63f51.firebaseapp.com',
+
+  projectId: 'noteagain-63f51',
+
+  storageBucket: 'noteagain-63f51.appspot.com',
+
+  messagingSenderId: '838706413547',
+
+  appId: '1:838706413547:web:6063bc8be57921bcd463ae',
 };
 
 export const app = initializeApp(firebaseConfig);

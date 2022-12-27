@@ -8,8 +8,8 @@ import {
   TextInput,
   View,
 } from 'react-native';
-import TestButton from '../../components/small/formButton';
 import { registerUser } from '../../hooks/firebase/UserHooks';
+import { FormButton } from './small/FormButton';
 
 export const RegisterForm = () => {
   const {
@@ -100,7 +100,7 @@ export const RegisterForm = () => {
       {errors.password && (
         <Text style={styles.errorText}>Please choose password</Text>
       )}
-      <TestButton title="Register" onPress={handleSubmit(onSubmit)} />
+      <FormButton title="Register" onPress={handleSubmit(onSubmit)} />
     </KeyboardAvoidingView>
   );
 };

@@ -1,4 +1,5 @@
 import { Ionicons, MaterialCommunityIcons } from '@expo/vector-icons';
+import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import { Reminder } from '../../types/FirebaseTypes';
 import { TextH2, TextThin } from '../utils/styles/FontStyles';

@@ -3,7 +3,7 @@ import {
   signInWithEmailAndPassword,
   updateProfile,
 } from 'firebase/auth';
-import { collection, doc, setDoc } from 'firebase/firestore';
+import { doc, setDoc } from 'firebase/firestore';
 import { auth, db } from '../../config/firebaseConfig';
 
 type UserProps = {
@@ -48,10 +48,10 @@ export const loginUser = async ({ email, password }: UserProps) => {
     );
     // TODO Create a nice toast message alerting that the user is signed in.
     // TODO Send the user to their profile page.
-    console.log(userCredentials);
+    //console.log(userCredentials);
   } catch (error) {
     // TODO Create a nice toast message alerting the error.
-    console.log(error);
+    //console.log(error);
   }
-  console.log('Succesful login');
+  //('Succesful login');
 };
